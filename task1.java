@@ -2,18 +2,14 @@ import java.util.Scanner;
 public class task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int addition = a + b;
-        int subtraction = a - b;
-        int multiplication = a * b;
-        int division = a / b;
-
-        System.out.println("addition :" + " " + addition);
-        System.out.println("subtraction :" + " " + subtraction);
-        System.out.println("multiplication :" + " " + multiplication);
-        System.out.println("division :" + " " + division);
-
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        if(num1 > num2){
+            System.out.println(num1 + " is greater than " + num2);
+        }
+        else {
+            System.out.println(num2 + " is greater than " + num1);
+        }
     }
 
 }
